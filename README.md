@@ -31,7 +31,20 @@ CivicPulse is designed to bridge this gap.
 
 The platform's core concept is:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Citizen Feedback         ↓  Multilingual Understanding         ↓  Demand Hotspot Detection         ↓  Infrastructure Data         ↓  Priority Scoring         ↓  Evidence-Backed Recommendations   `
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`  
+                                                                                        Citizen Feedback         
+                                                                                                ↓ 
+                                                                                    Multilingual Understanding        
+                                                                                                ↓  
+                                                                                     Demand Hotspot Detection         
+                                                                                                ↓  
+                                                                                        Infrastructure Data         
+                                                                                                ↓  
+                                                                                          Priority Scoring         
+                                                                                                ↓  
+                                                                                    Evidence-Backed Recommendations   `
+
+                                                                                    
 
 Product Vision
 ==============
