@@ -1,6 +1,6 @@
 import { DashboardData, District, DistrictDetail, Complaint, ComplaintCreate, ProcessingResult, AnalyticsData, ClusterData, CopilotResponse } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = (import.meta.env.VITE_API_BASE ?? '/api').replace(/\/$/, '');
 
 export const apiClient = {
   async getDashboard(): Promise<DashboardData | null> {

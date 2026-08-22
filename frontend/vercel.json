@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://your-civicpulse-backend.onrender.com/api/$1"
+    }
+  ]
+}
