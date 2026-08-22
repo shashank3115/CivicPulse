@@ -1,0 +1,11 @@
+export interface District { id: number; name: string; state: string; population: number; latitude: number; longitude: number; water_access: number; sanitation_access: number; road_quality: number; electricity_reliability: number; public_transport_access: number; healthcare_access: number; infrastructure_gap: number; planned_investment: number; complaint_count: number; priority_score: number; priority_tier: 'Low' | 'Medium' | 'High' | 'Critical'; }
+export interface DistrictDetail extends District { top_complaints: Complaint[]; evidence: { citizen_demand: number; top_category: string; infrastructure_gap: number; planned_investment: number; affected_population: number; }; ai_explanation: string; }
+export interface Complaint { id: number; text: string; language: string; detected_language: string; district_id: number; district_name?: string; category: string; subcategory?: string; latitude?: number; longitude?: number; cluster_id?: number; sentiment: string; urgency: string; embedding_status: string; normalized_text?: string; created_at: string; }
+export interface ComplaintCreate { text: string; language?: string; district_id?: number; category?: string; }
+export interface ProcessingStep { step: string; status: 'pending' | 'processing' | 'completed'; detail?: string; }
+export interface ProcessingResult { complaint: Complaint; steps: ProcessingStep[]; message: string; }
+export interface DashboardData { total_complaints: number; active_hotspots: number; critical_gaps: number; avg_priority_score: number; districts: District[]; recent_complaints: Complaint[]; }
+export interface AnalyticsData { complaint_trends: { date: string; count: number }[]; issue_distribution: { category: string; count: number; percentage: number }[]; priority_distribution: { critical: number; high: number; medium: number; low: number }; language_distribution: { language: string; count: number; percentage: number }[]; infrastructure_gaps: { district: string; gap: number }[]; }
+export interface ClusterData { id: number; name: string; category: string; complaint_count: number; district_count: number; description: string; }
+export interface CopilotResponse { answer: string; evidence: string[]; districts: string[]; }
+export type NavItem = 'dashboard' | 'hotspots' | 'priorities' | 'feedback' | 'infrastructure' | 'analytics';
